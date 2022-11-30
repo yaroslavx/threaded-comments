@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.6.1"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.2.0",
+    "@fastify/sensible": "^5.1.1",
+    "@prisma/client": "^4.6.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.2"
+  }
+}
